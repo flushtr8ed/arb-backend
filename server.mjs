@@ -51,7 +51,7 @@ function decide({ roi, profit, nearbyOffers, gated = false }) {
   return "WATCH";
 }
 
-async function keepaProductFinder({ minDropsPerMonth = 12, maxRank = 120000, minBuyBox = 16, maxResults = 40 }) {
+async function keepaProductFinder({ minDropsPerMonth = 5, maxRank = 300000, minBuyBox = 10, maxResults = 40 }) {
   const finder = {
     drops: { min: minDropsPerMonth },
     buyBox: { min: minBuyBox * 100 },
